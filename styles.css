@@ -128,7 +128,6 @@ footer {
     max-height: 80%; /* Maximum height of the image */
     margin: auto; /* Center the image */
     display: block; /* Makes the image a block element */
-    margin-bottom: 10px; /* Space between the image and caption */
 }
 
 .close {
@@ -148,10 +147,11 @@ footer {
     cursor: pointer;
 }
 
-
 #caption {
-    text-align: center; /* Center the caption text */
-    color: #fff; /* Caption text color */
-    padding: 10px 0; /* Padding around caption text */
-    height: auto; /* Adjust height to fit content */
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    height: 150px; /* Can be adjusted as needed */
 }
