@@ -5,83 +5,78 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: #333;
+    color: #fff;
+    padding: 5rem 1rem;
     text-align: center;
 }
 
-nav#sidebar {
-    background-color: #f4f4f4;
-    padding: 20px;
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s;
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    margin: 10px 0;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-main {
-    flex: 1;
-    padding: 20px;
+.hero p {
+    font-size: 1.2rem;
+    animation: fadeIn 3s;
 }
 
 section {
-    margin-bottom: 20px;
+    padding: 2rem;
+    text-align: center;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    position: relative;
+    padding: 1rem 0;
 }
 
-footer a {
-    color: #4CAF50;
-    text-decoration: none;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-@media (min-width: 768px) {
-    body {
-        display: flex;
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 2rem;
     }
 
-    nav#sidebar {
-        width: 20%;
-        flex-shrink: 0;
-    }
-
-    main {
-        width: 80%;
-    }
-}
-
-@media (max-width: 767px) {
-    nav#sidebar {
-        width: 100%;
-        text-align: center;
-    }
-
-    main {
-        width: 100%;
+    nav a {
+        font-size: 1rem;
     }
 }
