@@ -1,8 +1,6 @@
 console.log("Welcome to Latif.pro");
-// Get the modal
+// Set up modal functionality
 const modal = document.getElementById("imageModal");
-
-// Get the image and insert it inside the modal
 const images = document.querySelectorAll('.highlighted-image');
 const modalImg = document.getElementById("modalImage");
 const captionText = document.getElementById("caption");
@@ -10,20 +8,20 @@ const closeBtn = document.getElementsByClassName("close")[0];
 
 images.forEach((img) => {
     img.onclick = function() {
-        modal.style.display = "flex"; // Change this to 'flex' to show the modal
-        modalImg.src = this.src; // Set the modal image source to the clicked image
-        captionText.innerHTML = this.alt; // Set the caption text to the alt attribute
+        modal.style.display = "flex"; // Center the modal
+        modalImg.src = this.src; // Set image source
+        captionText.innerHTML = this.alt; // Set alt text as caption
     };
 });
 
-// Close the modal when the close button is clicked
+// Close the modal when clicking the X button
 closeBtn.onclick = function() {
     modal.style.display = "none";
-}
+};
 
-// Close the modal when the user clicks anywhere outside of the modal
+// Close the modal when clicking outside the image
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}
+};
