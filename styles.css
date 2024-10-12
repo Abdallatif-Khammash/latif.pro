@@ -81,4 +81,8 @@ footer {
     }
 }
 
+.centered-quote {
+    text-align: center; /* Centers the text horizontally */
+    margin: 20px 0;    /* Adjusts the vertical spacing */
+}
 
