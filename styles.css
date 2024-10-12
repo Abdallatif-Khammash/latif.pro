@@ -84,7 +84,7 @@ footer {
 .centered-quote {
     text-align: center; /* Centers the text horizontally */
     margin: 20px 0;    /* Adjusts the vertical spacing */
-    background-color: #ffe6e6; /* Light background color for highlighting */
+    background-color: #d3d3d3; /* Light gray background color for highlighting */
     padding: 10px;     /* Padding around the text */
     border-radius: 8px; /* Rounded corners */
     font-weight: bold;  /* Bold text for emphasis */
@@ -96,7 +96,7 @@ footer {
     padding: 10px;         /* Padding around the image */
     max-width: 90%;        /* Makes the image responsive */
     height: auto;          /* Maintains aspect ratio */
-    border: 2px solid #ff99cc; /* Optional border for emphasis */
+    border: 2px solid #333; /* Dark gray border for emphasis */
     border-radius: 8px;    /* Rounded corners for the image */
     transition: transform 0.3s; /* Smooth transition for hover effect */
 }
