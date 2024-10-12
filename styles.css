@@ -87,15 +87,20 @@ footer {
     background-color: #ffe6e6; /* Light background color for highlighting */
     padding: 10px;     /* Padding around the text */
     border-radius: 8px; /* Rounded corners */
+    font-weight: bold;  /* Bold text for emphasis */
 }
 
 .highlighted-image {
     display: block;         /* Makes the image a block element */
     margin: 20px auto;     /* Centers the image horizontally with top and bottom margin */
     padding: 10px;         /* Padding around the image */
-    max-width: 100%;       /* Makes the image responsive */
+    max-width: 90%;        /* Makes the image responsive */
     height: auto;          /* Maintains aspect ratio */
     border: 2px solid #ff99cc; /* Optional border for emphasis */
     border-radius: 8px;    /* Rounded corners for the image */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
 }
 
+.highlighted-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
