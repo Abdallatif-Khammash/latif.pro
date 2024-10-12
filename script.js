@@ -11,11 +11,12 @@ const closeBtn = document.getElementsByClassName("close")[0];
 
 images.forEach((img) => {
     img.onclick = function() {
-        modal.style.display = "block";
+        modal.style.display = "flex"; // Show modal with flex display
         modalImg.src = this.src; // Set the modal image source to the clicked image
         captionText.innerHTML = this.alt; // Set the caption text to the alt attribute
     };
 });
+
 
 // Close the modal when the close button is clicked
 closeBtn.onclick = function() {
