@@ -82,52 +82,49 @@ footer {
 }
 
 .centered-quote {
-    text-align: center; /* Centers the text horizontally */
-    margin: 20px 0;    /* Adjusts the vertical spacing */
-    background-color: #d3d3d3; /* Light gray background color for highlighting */
-    padding: 10px;     /* Padding around the text */
-    border-radius: 8px; /* Rounded corners */
-    font-weight: bold;  /* Bold text for emphasis */
+    text-align: center;
+    margin: 20px 0;
+    background-color: #d3d3d3;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 .highlighted-image {
-    display: block;         /* Makes the image a block element */
-    margin: 20px auto;     /* Centers the image horizontally with top and bottom margin */
-    padding: 10px;         /* Padding around the image */
-    max-width: 90%;        /* Makes the image responsive */
-    height: auto;          /* Maintains aspect ratio */
-    border: 2px solid #333; /* Dark gray border for emphasis */
-    border-radius: 8px;    /* Rounded corners for the image */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 90%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: transform 0.3s;
 }
 
 .highlighted-image:hover {
-    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    transform: scale(1.05);
 }
-/* Modal styles */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
-   
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    text-align: center; /* Center text */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-
-
 .modal-content {
-    max-width: 90%; /* Maximum width of the image */
-    max-height: 80%; /* Maximum height of the image */
-    margin: auto; /* Center the image */
-    display: block; /* Makes the image a block element */
+    max-width: 90%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
 }
 
 .close {
@@ -153,5 +150,5 @@ footer {
     text-align: center;
     color: #fff;
     padding: 10px 0;
-    height: 150px; /* Can be adjusted as needed */
+    height: 150px;
 }
