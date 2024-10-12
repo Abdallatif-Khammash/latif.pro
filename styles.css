@@ -127,6 +127,7 @@ footer {
     max-height: 80%; /* Maximum height of the image */
     margin: auto; /* Center the image */
     display: block; /* Makes the image a block element */
+    margin-top: 20px; /* Adjust this value as needed */
 }
 
 .close {
