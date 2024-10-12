@@ -155,3 +155,10 @@ footer {
     padding: 10px 0;
     height: 150px; /* Can be adjusted as needed */
 }
+
+.caption {
+    text-align: center; /* Center the caption */
+    margin-top: 10px;  /* Space between the image and caption */
+    color: #333;       /* Caption text color */
+    font-size: 1rem;   /* Adjust font size as needed */
+}
