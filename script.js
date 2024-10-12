@@ -1,4 +1,3 @@
-
 console.log("Welcome to Latif.pro");
 // Get the modal
 const modal = document.getElementById("imageModal");
@@ -11,12 +10,11 @@ const closeBtn = document.getElementsByClassName("close")[0];
 
 images.forEach((img) => {
     img.onclick = function() {
-        modal.style.display = "flex"; // Show modal with flex display
+        modal.style.display = "flex"; // Change this to 'flex' to show the modal
         modalImg.src = this.src; // Set the modal image source to the clicked image
         captionText.innerHTML = this.alt; // Set the caption text to the alt attribute
     };
 });
-
 
 // Close the modal when the close button is clicked
 closeBtn.onclick = function() {
