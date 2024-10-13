@@ -11,7 +11,7 @@ images.forEach((img) => {
     img.onclick = function() {
         modal.style.display = "block"; // Show the modal
         modalImg.src = this.src; // Set the modal image source to the clicked image
-        captionText.textContent = this.alt; // Set the alt text as caption
+      //  captionText.textContent = this.alt; // Set the alt text as caption
     };
 });
 
