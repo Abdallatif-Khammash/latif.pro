@@ -4,6 +4,8 @@ console.log("Welcome to Latif.pro");
 const modal = document.getElementById("imageModal");
 const images = document.querySelectorAll('.highlighted-image');
 const modalImg = document.getElementById("modalImage");
+const captionText = document.getElementById("caption"); // Define captionText by selecting #caption
+
 
 images.forEach((img) => {
     img.onclick = function() {
