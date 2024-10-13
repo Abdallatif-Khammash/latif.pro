@@ -122,7 +122,9 @@ footer {
 .modal-content {
     max-width: 90%;
     max-height: 80%;
+     /*
     margin: auto;
+     */
     display: block;
     border-radius: 8px;
 }
