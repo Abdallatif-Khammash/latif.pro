@@ -106,26 +106,28 @@ footer {
 }
 
 .modal {
-    display: none;
+    display: none; /* Ensure the modal is hidden by default */
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
-  
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for overlay */
 }
 
 .modal-content {
-    max-width: 90%; /* Control the max width */
-    max-height: 80%; /* Control the max height */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the image horizontally and vertically */
+    max-width: 90%;
+    max-height: 80%;
     display: block;
     border-radius: 8px;
-    margin: 0; /* No margin to prevent extra space */
+    margin: 0; /* Prevent any margin from causing misalignment */
 }
+
 
 #caption {
     color: #fff;
