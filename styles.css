@@ -106,7 +106,7 @@ footer {
 }
 
 .modal {
-    display: none; /* Ensure the modal is hidden by default */
+    display: none;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -120,13 +120,23 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the image horizontally and vertically */
+    transform: translate(-50%, -50%);
     max-width: 90%;
     max-height: 80%;
     display: block;
     border-radius: 8px;
-    margin: 0; /* Prevent any margin from causing misalignment */
+    margin: 0;
 }
+
+.modal-content::after {
+    content: attr(alt); /* Display the alt text as caption */
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 
 
 #caption {
