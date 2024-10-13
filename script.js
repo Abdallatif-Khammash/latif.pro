@@ -9,7 +9,7 @@ images.forEach((img) => {
     img.onclick = function() {
         modal.style.display = "block"; // Show the modal
         modalImg.src = this.src; // Set the image source to the clicked image
-        modalImg.alt = this.alt; // Set alt attribute for caption display
+        captionText.innerHTML = this.alt; // Set the alt text as caption
     };
 });
 
